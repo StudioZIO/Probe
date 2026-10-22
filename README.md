@@ -4,7 +4,7 @@ StudioZIO Probe measures supported stereo AUv2 audio effects on macOS. Results a
 
 ## Version 0.18.0
 
-Installer publication is pending final notarization and download verification. No installer release is available yet.
+Download the installer and checksums from [release v0.18.0](https://github.com/StudioZIO/Probe/releases/tag/v0.18.0). See [release notes](RELEASE.md) for verification details.
 
 This distribution bundles Python 3.14.9 and uses a universal Apple silicon / Intel build. Homebrew and a separate Python installation are not required. Measurement behavior is unchanged from 0.17.11.
 
@@ -17,7 +17,7 @@ This distribution bundles Python 3.14.9 and uses a universal Apple silicon / Int
 | Full visual UI interactions | Not tested |
 | Launch, data-folder creation, clean quit | Previously tested on the build Mac |
 
-The original candidate passed 17 recorded checks covering bundled Python, six self-tests, fixture capture, a default run, report export/import, and unchanged bundle contents. Release packaging was subsequently sanitized; the sanitized app passes all six packaged self-tests and strict signature verification. Final installer verification is pending. The tests do not establish compatibility with every plugin or configuration.
+The original candidate passed 17 recorded checks covering bundled Python, six self-tests, fixture capture, a default run, report export/import, and unchanged bundle contents. Release packaging was subsequently sanitized; the sanitized app passes all six packaged self-tests and strict signature verification. The final app and DMG are Developer ID signed, Apple notarized, and stapled; signature, Gatekeeper, and staple checks pass. The tests do not establish compatibility with every plugin or configuration.
 
 See [installation instructions](INSTALL.md). Data is stored in `~/Library/Application Support/StudioZIO Probe/` and in user-selected export folders.
 
